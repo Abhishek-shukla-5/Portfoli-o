@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Personal Portfolio Using Bootstrap 5</title>
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abhishek Shukla</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhishek Shukla</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/Profile_pic.jpg" alt="Abhishek shukla">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Abhishek Shukla</h1>
+            <p class="section__text__p2">AI MVP Developergit init</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Abhishek-resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-conatiner">
+                <img src="Assets/linkedin.png" alt="linkedin Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/abhishek-shukla-941908240/'">
+                <img src="Assets/github.png" alt="github Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/Abhishek-shukla-5'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Known more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Assets/Profile_pic.jpg" 
+                alt="profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="Assets/experience.png" alt="experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ Years <br/>AI MVP Development</p>
+                    </div>
+                     <div class="details-container">
+                        <img src="Assets/education.png" alt="experience icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor's Technology <br/>Computer Science Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I’m a passionate and growth-driven individual with a strong interest in AI, product development, and business strategy. With hands-on experience in building AI-powered MVPs, managing projects, and exploring innovative no-code tools, I thrive at the intersection of creativity and technology. Whether it's crafting user-centric solutions, analyzing business needs, or leading from vision to execution — I aim to deliver impactful results. I'm currently exploring opportunities to collaborate, grow, and build meaningful digital products.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <img src="Assets/Spotifymusic.jpeg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href-'./#Experience'"> -->
+    </section>
+    <section id="Experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-containers">
+            <div class="about-containers">
+               <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>FlutterFlow</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>AI integrated Development</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>LLM</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                     </div>
+               </div>
+               <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                       <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                               <h3>Sql</h3>
+                               <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Express.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+               </div>
+            
+            </div>
+        </div>
+        <!-- <img src="Assets/Spotifymusic.jpeg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href-'./#Projects'"> -->
+    </section>
+    <section id="Project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-containers">
+            <div class="about-containers">
+              <div class="details-container color-container">
+            <div class="article-container">
+                <img src="Assets/conblenai.png" 
+                alt="project 1"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://github.com/Abhishek-shukla-5/Conblen-AI-1'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://conblen-ai-1.vercel.app/'">Live Demo</button>
+            </div>
+               </div>
+                <div class="details-container color-container">
+            <div class="article-container">
+                <img src="Assets/completeiq.png" 
+                alt="project 2"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://github.com/Abhishek-shukla-5/completeIQ'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://complete-iq.vercel.app/'">Live Demo</button>
+            </div>
+               </div>
+                <div class="details-container color-container">
+            <div class="article-container">
+                <img src="Assets/Architecture Portfolio Projects __ Photos, videos, logos, illustrations and branding.jpeg" 
+                alt="project 3"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://github.com/Abhishek-shukla-5/Portfolio0'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.
+                href='https://abhishek-shukla-5.github.io/Portfolio0/'">Live Demo</button>
+            </div>
+               </div>
+                <img src="Assets/Spotifymusic.jpeg" alt="Arrow icon" class="icon arrow"
+                onclick="location.href-'./#Projects'">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Assets/email.png"
+                 alt="Email Icon"
+                 class="icon cintact-icon">
+                 <p><a href="mailtp:abhishekshukla55710@gmail.com">abhishekshukla55710@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="Assets/linkedin.png"
+                 alt="Linkedin Icon"
+                 class="icon cintact-icon">
+                 <p><a href="https://www.linkedin.com/in/abhishek-shukla-941908240/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2025 Abhishek All Rights Reserved</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
